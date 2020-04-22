@@ -14,63 +14,14 @@ export class OrbitCountsComponent implements OnInit {
   ngOnInit() {
   }
 
-  typeCountCom(satellites): number {
-    let num:number = 0;
-    for(let i = 0; i<satellites.length; i++) {
-      if (satellites[i].type === 'Communication') {
-        num++;
+  typeCount(type: string): number{
+    let types: string[] = [];
+    for (let i = 0; i < this.satellites.length; i++) {
+      if (this.satellites[i].type === type) {
+        types.push(this.satellites[i].name);
       }
     }
-    return num;
-  }
 
-  typeCountProbe(satellites): number {
-    let num:number = 0;
-    for(let i=0; i<satellites.length; i++) {
-      if (satellites[i].type === 'Probe') {
-        num++;
-      }
-    }
-    return num;
-  }
-
-  typeCountPos(satellites): number {
-    let num:number = 0;
-    for(let i=0; i<satellites.length; i++) {
-      if (satellites[i].type === 'Positioning') {
-        num++;
-      }
-    }
-    return num;
-  }
-
-  typeCountDebris(satellites): number {
-    let num:number = 0;
-    for(let i=0; i<satellites.length; i++) {
-      if (satellites[i].type === 'Space Debris') {
-        num++;
-      }
-    }
-    return num;
-  }
-
-  typeCountSS(satellites): number {
-    let num:number = 0;
-    for(let i=0; i<satellites.length; i++) {
-      if (satellites[i].type === 'Space Station') {
-        num++;
-      }
-    }
-    return num;
-  }
-
-  typeCountTelescope(satellites): number {
-    let num:number = 0;
-    for(let i=0; i<satellites.length; i++) {
-      if (satellites[i].type === 'Telescope') {
-        num++;
-      }
-    }
-    return num;
+    return types.length;
   }
 }
