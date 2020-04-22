@@ -1,1 +1,10 @@
-<p>orbit-counts works!</p>
+<h3>Satellite Counts:</h3>
+<div class="counts">
+   <div>Total: <span>{{satellites.length}}</span></div>
+   <div>Space Debris: <span>{{typeCountDebris(satellites)}}</span></div>
+   <div>Communication: <span>{{typeCountCom(satellites)}}</span></div>
+   <div>Probe: <span>{{typeCountProbe(satellites)}}</span></div>
+   <div>Positioning: <span>{{typeCountPos(satellites)}}</span></div>
+   <div>Space Station: <span>{{typeCountSS(satellites)}}</span></div>
+   <div>Telescope: <span>{{typeCountTelescope(satellites)}}</span></div>
+</div>
