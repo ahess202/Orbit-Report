@@ -13,3 +13,8 @@
 .counts span {
     float: right;
 }
+
+h3 {
+    background-color: lightblue;
+    border: solid black 1px;
+}

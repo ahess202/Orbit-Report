@@ -9,11 +9,13 @@
 
 table {
   color: #111;
+  border: solid black 5px;
   border-radius: 5px;
   overflow: hidden;
   margin: 12px 0;
   min-width: 600px;
   background: lightblue;
+  display: inline-block;
 }
 
 .header-row {
@@ -30,3 +32,4 @@ th, td {
 tr:nth-child(even) {
     background-color: orange;
 }
+
