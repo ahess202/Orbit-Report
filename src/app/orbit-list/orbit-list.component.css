@@ -13,7 +13,7 @@ table {
   overflow: hidden;
   margin: 12px 0;
   min-width: 600px;
-  background: sandybrown;
+  background: lightblue;
 }
 
 .header-row {
@@ -25,4 +25,8 @@ th, td {
     text-align: left;
     margin: 5px 10px;
     padding: 6px;
+}
+
+tr:nth-child(even) {
+    background-color: orange;
 }
