@@ -27,13 +27,15 @@ button {
 }
 h1 {
     font-family: fantasy;
+    color: white;
     text-align: center;
-    background:lightblue;
-    border: solid black 3px;
-    border-radius: 5px;
+    /* background:lightblue; */
+    /* border: solid black 3px; */
+    /* border-radius: 5px; */
     padding: 10px;
     font-size: 50px;
     width: max-content;
     margin-left: 15%;
     margin-bottom: 0;
+    text-decoration: underline;
 }
